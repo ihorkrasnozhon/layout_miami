@@ -1,0 +1,43 @@
+.header{
+  background-image: url("/src/images/photos/girl.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 0 20px 40px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+
+  @media (min-width: 1260px) {
+    padding: 36px 120px 40px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 63px);
+    grid-template-rows: 1fr 1fr;
+
+    &__title{
+      grid-column: 1/7;
+      grid-row: 3/4;
+      font-size: 56px;
+    }
+  }
+
+  @media (min-width: 744px) {
+    padding: 36px 72px 40px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    grid-template-rows: 1fr 1fr;
+
+    &__title{
+      grid-column: 1/5;
+      grid-row: 3/4;
+      font-size: 48px;
+    }
+  }
+}

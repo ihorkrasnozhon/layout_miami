@@ -1,0 +1,55 @@
+.navigation{
+  padding: 28px 0 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 24px;
+    width: auto;
+  }
+
+  &__logo{
+    width: 125px;
+  }
+
+  @media (min-width: 744px) {
+    grid-column: 1/7;
+    grid-row: 1/2;
+
+    &__logo{
+      width: 172px;
+    }
+
+    &__actions{
+      display: flex;
+      gap: 32px;
+
+      img {
+        width: 32px;
+      }
+    }
+  }
+
+  @media (min-width: 1260px) {
+    grid-column: 1/13;
+    grid-row: 1/2;
+
+    &__logo{
+      width: 172px;
+    }
+
+    &__actions{
+      width: 128px;
+      gap: 32px;
+
+      img {
+        width: 32px;
+      }
+    }
+  }
+}
+
+

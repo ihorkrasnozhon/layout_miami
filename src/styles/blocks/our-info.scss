@@ -1,0 +1,26 @@
+.our-info{
+  padding: 48px 20px 64px;
+
+  &__title{
+    font-family: "Space Grotesk", monospace;
+    font-size: 14px;
+    padding-bottom: 8px;
+    color: rgba(147, 147, 163, 1);
+  }
+
+  &__paragraph{
+    font-family: "Space Mono", monospace;
+    font-size: 16px;
+    padding-bottom: 24px;
+    color: rgba(25, 25, 25, 1);
+  }
+
+  @media (min-width: 744px) {
+    padding: 80px 72px 0;
+  }
+
+  @media (min-width: 1260px) {
+    grid-column: 7/12;
+    padding: 0;
+  }
+}

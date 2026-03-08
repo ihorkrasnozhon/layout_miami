@@ -1,7 +1,16 @@
-@import 'utils';
+@import './utils/reset';
 @import 'fonts';
-@import 'typography';
-
-body {
-  background: $c-gray;
-}
+@import "blocks/title";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/product-card";
+@import "blocks/categories";
+@import "blocks/button";
+@import "blocks/photo-divider";
+@import "blocks/about";
+@import "blocks/form";
+@import "blocks/our-info";
+@import "blocks/navigation";
+@import "blocks/menu";
+@import "blocks/recommended";
+@import "blocks/contact";
